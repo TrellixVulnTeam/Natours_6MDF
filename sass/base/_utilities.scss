@@ -1,0 +1,27 @@
+.u-center-text{
+  text-align:center;
+}
+.grid--2-cols{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+.u-margin-bottom-big{
+  margin-bottom:8rem;
+}
+.u-margin-bottom-medium{
+  margin-bottom:4rem;
+}
+.u-margin-bottom-small{
+   margin-bottom:1.5rem;
+ }
+
+.gap-2{
+  gap: 2rem;
+}
+.grid-all-center{
+  justify-items:center;
+  align-items: center;
+}
+.u-padding-horizontal-medium{
+  padding: 0 7rem;
+}

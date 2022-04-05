@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+.header {
+  background-image: linear-gradient(rgba($primary-light-green, 0.8), rgba($primary-dark-green, 0.8)), url("../img/hero.jpg");
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  height: 95vh;
+  position: relative;
+
+  &__logo-box {
+    left: 4rem;
+    position: absolute;
+    top: 4rem;
+  }
+
+  &__logo {
+    height: 3.2rem;
+  }
+
+  &__text-box {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 44%;
+    transform: translate(-50%, -50%);
+  }
+}

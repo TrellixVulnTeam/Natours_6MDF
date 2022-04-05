@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+.composition {
+  position: relative;
+
+  &__photo {
+    // display: inline-block;
+    width: 23vw;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 3px;
+    position: absolute;
+
+    &--p1 {
+      top: -2em;
+      left: 0;
+    }
+
+    &--p2 {
+      top: -0.6rem;
+      right: 1.5rem;
+    }
+
+    &--p3 {
+      top: 9.5rem;
+      left: 18.5%;
+    }
+
+  }
+}
