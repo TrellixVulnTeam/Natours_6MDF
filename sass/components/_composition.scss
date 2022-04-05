@@ -1,14 +1,16 @@
 @import "../abstracts/variables";
+
 .composition {
   position: relative;
 
   &__photo {
+    transition: all 0.2s ease-in-out;
     // display: inline-block;
     width: 23vw;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 3px;
     position: absolute;
-
+    outline-offset: 1rem;
     &--p1 {
       top: -2em;
       left: 0;
@@ -24,5 +26,15 @@
       left: 18.5%;
     }
 
+    &:hover {
+      outline: $primary-color  inset .2rem;
+      box-shadow: 0 2.5rem 5rem rgba($color-black, 0.5);
+      transform: scale(1.1) translateY(-0.5rem);
+      z-index: 1;
+    }
+  }
+  &:hover &__photo:not(:hover){           // IMPORTANT: this is the only way to make the photo appear on hover - closest parent
+    opacity: 0.9;
+    transform: scale(0.95) skew(1deg);
   }
 }

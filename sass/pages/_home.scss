@@ -1,6 +1,17 @@
 @import "../abstracts/_variables";
-.section-about{
-  padding:25rem 0;
+
+.section-about {
+  padding: 25rem 0 27.5rem;
   background-color: $color-gray-light-1;
   margin-top: -20rem;
+}
+.section-features{
+  padding: 17.5rem 10rem;
+  background-image: linear-gradient(rgba($primary-light-green, 0.8), rgba($primary-dark-green, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  &>*{                     // SELECT only direct children of .section-features
+    transform: skewY(7deg);
+  }
+  margin-top: -8.5rem;
 }
