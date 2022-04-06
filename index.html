@@ -1,63 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <meta content = "width=device-width, initial-scale=1.0" name = "viewport">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/icon-font.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href = "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel = "stylesheet">
+    <link href = "css/icon-font.css" rel = "stylesheet">
+    <link href = "css/style.css" rel = "stylesheet">
+    <link href = "img/favicon.png" rel = "shortcut icon" type = "image/png">
 
     <title>Natours | Exciting tours for adventurous people</title>
 </head>
 <body>
-<header class="header">
+<header class = "header">
     <div class = "header__logo-box">
-        <img src = "img/logo-white.png" alt = "logo" class = "header__logo">
+        <img alt = "logo" class = "header__logo" src = "img/logo-white.png">
     </div>
 
-    <div class="header__text-box">
-    <h1 class="heading-primary">
-        <span class="heading-primary--main">outdoors</span>
-        <span class="heading-primary--sub">is where life happens</span>
-    </h1>
-        <a href = "#" class="btn btn--white btn--animated">Discover our tours</a>
+    <div class = "header__text-box">
+        <h1 class = "heading-primary">
+            <span class = "heading-primary--main">outdoors</span>
+            <span class = "heading-primary--sub">is where life happens</span>
+        </h1>
+        <a class = "btn btn--white btn--animated" href = "#">Discover our tours</a>
     </div>
 </header>
 
 <main>
     <section class = "section-about">
         <div class = "u-center-text u-margin-bottom-big">
-            <h1 class = "heading-secondary">Exciting tours for adventurous people</h1>
+            <h2 class = "heading-secondary">Exciting tours for adventurous people</h2>
         </div>
-        <div class="grid--2-cols gap-2 u-padding-horizontal-medium">
+        <div class = "grid--2-cols gap-2 u-padding-horizontal-medium">
             <div class = "about-text">
                 <h3 class = "heading-tertiary u-margin-bottom-small">You're going to fall in love with nature!</h3>
                 <p class = "paragraph">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut consequuntur corporis deleniti dolorem enim esse explicabo laboriosam molestiae molestias, natus quaerat quasi quod quos sit soluta sunt velit vitae.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut consequuntur corporis
+                    deleniti dolorem enim esse explicabo laboriosam molestiae molestias, natus quaerat quasi quod quos
+                    sit soluta sunt velit vitae.
                 </p>
                 <h3 class = "heading-tertiary u-margin-bottom-small">Live adventures like you have never before</h3>
                 <p class = "paragraph">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta doloribus facilis iusto
-        necessitatibus, possimus quia.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta doloribus facilis iusto
+                    necessitatibus, possimus quia.
                 </p>
-                <a href = "#" class = "btn-text">Learn more &darr;</a>
+                <a class = "btn-text" href = "#">Learn more &darr;</a>
             </div>
 
             <div class = "about-imgs">
                 <div class = "composition">
-                    <img src = "img/nat-1-large.jpg" alt = "Photo 1" class =
-                            "composition__photo composition__photo--p1">
-                    <img src = "img/nat-2-large.jpg" alt = "Photo 2" class = "composition__photo composition__photo--p2">
-                    <img src = "img/nat-3-large.jpg" alt = "Photo 3" class = "composition__photo composition__photo--p3">
+                    <img alt = "Photo 1" class =
+                            "composition__photo composition__photo--p1" src = "img/nat-1-large.jpg">
+                    <img alt = "Photo 2" class = "composition__photo composition__photo--p2"
+                         src = "img/nat-2-large.jpg">
+                    <img alt = "Photo 3" class = "composition__photo composition__photo--p3"
+                         src = "img/nat-3-large.jpg">
                 </div>
             </div>
         </div>
     </section>
+
+    <section class = "section-features">
+        <div class = "grid--4-cols grid-justify-space">
+            <div class = "feature-box">
+                <i class = "feature-box__icon icon-basic-world"></i>
+                <h3 class = "heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                <p class = "feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque non quod
+                                               suscipit!</p>
+            </div>
+            <div class = "feature-box">
+                <i class = "feature-box__icon icon-basic-map"></i>
+                <h3 class = "heading-tertiary u-margin-bottom-small">Meet the nature</h3>
+                <p class = "feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
+                                               molestias.</p>
+            </div>
+            <div class = "feature-box">
+                <i class = "feature-box__icon icon-basic-compass"></i>
+                <h3 class = "heading-tertiary u-margin-bottom-small">find your way</h3>
+                <p class = "feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi
+                                               ipsam odio quae sequi. Ratione.</p>
+            </div>
+            <div class = "feature-box">
+                <i class = "feature-box__icon icon-basic-cards-hearts"></i>
+                <h3 class = "heading-tertiary u-margin-bottom-small">Live like never before</h3>
+                <p class = "feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum
+                                               fugit reiciendis similique tempore!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class = "section-tours">
+        <div class = "u-center-text u-margin-bottom-big">
+            <h2 class = "heading-secondary">Most popular tours</h2>
+        </div>
+
+        <div class = "grid--3-cols grid-adjust">
+            <div class = "tours-card">
+                <div class = "tours-card__side tours-card__side--front">
+                    <div class = "tours-card__picture tours-card__picture--1">
+                        &nbsp;
+                    </div>
+                    <h4 class = "tours-card__heading">
+                        <span class="tours-card__heading-span tours-card__heading-span--1">The sea explorer</span>
+                    </h4>
+                    <div class = "tours-card__details">
+                        <ul>
+                            <li>3 day tours</li>
+                            <li>Up to 30 people</li>
+                            <li>2 tour guides</li>
+                            <li>Sleep in cozy hotels</li>
+                            <li>Difficulty: Easy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "tours-card__side tours-card__side--back tours-card__side--back-1 u-flex-cont">
+                    <div class = "tours-card__cta u-flex-cont">
+                        <div class = "tours-card__price-box">
+                            <p class = "tours-card__price-only">Only</p>
+                            <p class="tours-card__price-value">$299</p>
+                        </div>
+                        <a href = "#" class = "btn btn--white">Book now!</a>
+                        <a href = "#" class = "btn btn--grad-1 btn--grad">Learn more &darr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tours-card">
+                <div class = "tours-card__side tours-card__side--front">
+                    <div class = "tours-card__picture tours-card__picture--2">
+                        &nbsp;
+                    </div>
+                    <h4 class = "tours-card__heading">
+                        <span class="tours-card__heading-span tours-card__heading-span--2">The forest hiker</span>
+                    </h4>
+                    <div class = "tours-card__details">
+                        <ul>
+                            <li>4 day tours</li>
+                            <li>Up to 20 people</li>
+                            <li>3 tour guides</li>
+                            <li>Sleep in cozy tents</li>
+                            <li>Difficulty: Medium</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "tours-card__side tours-card__side--back tours-card__side--back-2 u-flex-cont">
+                    <div class = "tours-card__cta u-flex-cont">
+                        <div class = "tours-card__price-box">
+                            <p class = "tours-card__price-only">Only</p>
+                            <p class="tours-card__price-value">$949</p>
+                        </div>
+                        <a href = "#" class = "btn btn--white">Book now!</a>
+                        <a href = "#" class = "btn btn--grad-2 btn--grad ">Learn more &darr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tours-card">
+                <div class = "tours-card__side tours-card__side--front">
+                    <div class = "tours-card__picture tours-card__picture--3">
+                        &nbsp;
+                    </div>
+                    <h4 class = "tours-card__heading">
+                        <span class="tours-card__heading-span tours-card__heading-span--3">The mountain
+                                                                                           adventurer</span>
+                    </h4>
+                    <div class = "tours-card__details">
+                        <ul>
+                            <li>5 day tours</li>
+                            <li>Up to 15 people</li>
+                            <li>5 tour guides</li>
+                            <li>Sleep in cozy tents</li>
+                            <li>Difficulty: Hard</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "tours-card__side tours-card__side--back tours-card__side--back-3 u-flex-cont">
+                    <div class = "tours-card__cta u-flex-cont">
+                        <div class = "tours-card__price-box">
+                            <p class = "tours-card__price-only">Only</p>
+                            <p class="tours-card__price-value">$499</p>
+                        </div>
+                        <a href = "#" class = "btn btn--white">Book now!</a>
+                        <a href = "#" class = "btn btn--grad-3 btn--grad">Learn more &darr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "u-center-text u-margin-top-big">
+            <a href="#" class = "btn btn--green">Discover all tours</a>
+        </div>
+    </section>
+
+    <section class="section-story">
+
+        <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Your browser is not supported!
+                </video>
+        </div>
+        <div class = "u-center-text u-margin-bottom-big u-margin-top-big">
+            <h2 class = "heading-secondary">We simply make people happy</h2>
+        </div>
+        <div class="flex-col">
+            <div class="story">
+                <figure class = "story__shape">
+                    <img src = "img/nat-8.jpg" alt = "Person on a tour" class="story__img">
+                    <figcaption class="story__caption">Mary Smith</figcaption>
+                </figure>
+                <div class = "story__text">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        I had the best week ever with my family
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis enim esse, nostrum
+                        quasi quibusdam repell. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                        debitis enim esse, nostrum quasi quibusdam repellendus veritatis! Cum in iure iusto modi nulla perferendis porro possimus quae, quod saepe sequi soluta suscipit! Non, tempora, voluptatem.
+                    </p>
+                </div>
+            </div>
+            <div class="story">
+                <figure class = "story__shape">
+                    <img src = "img/nat-9.jpg" alt = "Person on a tour" class="story__img">
+                    <figcaption class="story__caption">Mark Wilson</figcaption>
+                </figure>
+                <div class = "story__text">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        That what will change your imagination forever
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis enim esse, nostrum
+                        quasi quibusdam repell. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                        debitis enim esse, nostrum quasi quibusdam repellendus veritatis! Cum in iure iusto modi nulla perferendis porro possimus quae, quod saepe sequi soluta suscipit! Non, tempora, voluptatem.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class = "u-center-text u-margin-top-big">
+            <a href="#" class = "btn-text">Discover all tours &darr;</a>
+        </div>
+    </section>
 </main>
-
 </body>
-
 </html>
