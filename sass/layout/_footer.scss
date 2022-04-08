@@ -1,0 +1,48 @@
+@import "../abstracts/_variables.scss";
+.footer{
+  background-color: $color-gray-dark-3;
+  padding: 5rem 10rem;
+  font-size: 1.4rem;
+  color: $color-gray-light-1;
+
+  &__logo{
+    display: inline-block;
+    width: 15rem;
+    height: auto;
+  }
+  &__logo-box{
+     text-align: center;
+    margin-bottom: 8rem;
+  }
+  &-copyright{
+    padding: 1rem 0 0;
+    border-top: 1px solid $color-gray-dark-2;
+    text-align: justify;
+  }
+  &__list{
+    list-style: none;
+    display: inline-flex;
+    gap: 1.5rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid $color-gray-dark-2;
+  }
+  &__navigation{
+    justify-self: end;
+  }
+  &__link{
+    transition: all 0.4s ease-in-out;
+    &:link, &:visited{
+      color: $color-gray-light-1;
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      background-color: $color-gray-dark-3;
+    }
+    &:hover, &:active{
+      color: $primary-color;
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+      transform: translateY(-3px) scale(1.15);
+      font-weight: 700;
+    }
+  }
+}

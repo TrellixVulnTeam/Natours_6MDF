@@ -1,0 +1,101 @@
+@import "../abstracts/variables";
+
+.form {
+  &__input {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba($color-white, .7);
+    font-family: inherit;
+    transition: background-color, box-shadow, outline, border-bottom .4s ease-out;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    display: block;
+    color: inherit;
+
+    &::-webkit-input-placeholder {
+      color: $color-gray-dark-2;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .12);
+      border-bottom: 4px solid $primary-color;
+      background-color: rgba($color-white, .8);
+
+      &:invalid {
+        border-bottom: 4px solid $color-secondary-dark;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: .7rem;
+    margin-left: 2rem;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+  }
+
+  &__group {
+
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    transform: translateY(-3rem);
+    visibility: hidden;
+  }
+
+  &__input:not(:placeholder-shown) + &__label {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__radio-label {
+    cursor: pointer;
+    padding-left: 5rem;
+  }
+
+  &__radio-group {
+    width: 49%;
+    position: relative;
+    display: inline-block;
+  }
+  &__radio-input{
+    display: none;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 5px solid $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -0.865rem;
+    top: -0.35rem;
+
+    &::after {
+      content: "";
+      height: 1.19rem;
+      width: 1.19rem;
+      border-radius: 50%;
+      background-color: $primary-color;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-button::after {
+    opacity: 0.99;
+  }
+}
