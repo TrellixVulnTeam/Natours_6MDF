@@ -14,18 +14,21 @@
 <body>
 
 <div class = "navigation">
-    <input type = "checkbox" class = "navigation__checkbox" id = "nav-toggle">
-    <label for = "nav-toggle" class = "navigation__button">
-        <span class="navigation__icon ">&nbsp;</span>
+    <input class = "navigation__checkbox" id = "nav-toggle" type = "checkbox">
+    <label class = "navigation__button" for = "nav-toggle">
+        <span class = "navigation__icon ">&nbsp;</span>
     </label>
     <div class = "navigation__background">&nbsp;</div>
     <nav class = "navigation__nav">
         <ul class = "navigation__list">
-            <li class = "navigation__item"><a href = "#" class = "navigation__link"><span>01</span>About Natours</a></li>
-            <li class = "navigation__item"><a href = "#" class = "navigation__link"><span>02</span>Your benefits</a></li>
-            <li class = "navigation__item"><a href = "#" class = "navigation__link"><span>03</span>Popular tours</a></li>
-            <li class = "navigation__item"><a href = "#" class = "navigation__link"><span>04</span>Stories</a></li>
-            <li class = "navigation__item"><a href = "#" class = "navigation__link"><span>05</span>Book now!</a></li>
+            <li class = "navigation__item"><a class = "navigation__link" href = "#"><span>01</span>About Natours</a>
+            </li>
+            <li class = "navigation__item"><a class = "navigation__link" href = "#"><span>02</span>Your benefits</a>
+            </li>
+            <li class = "navigation__item"><a class = "navigation__link" href = "#"><span>03</span>Popular tours</a>
+            </li>
+            <li class = "navigation__item"><a class = "navigation__link" href = "#"><span>04</span>Stories</a></li>
+            <li class = "navigation__item"><a class = "navigation__link" href = "#"><span>05</span>Book now!</a></li>
         </ul>
     </nav>
 </div>
@@ -107,7 +110,7 @@
         </div>
     </section>
 
-    <section class = "section-tours">
+    <section class = "section-tours" id="section-tours">
         <div class = "u-center-text u-margin-bottom-big">
             <h2 class = "heading-secondary">Most popular tours</h2>
         </div>
@@ -119,7 +122,7 @@
                         &nbsp;
                     </div>
                     <h4 class = "tours-card__heading">
-                        <span class="tours-card__heading-span tours-card__heading-span--1">The sea explorer</span>
+                        <span class = "tours-card__heading-span tours-card__heading-span--1">The sea explorer</span>
                     </h4>
                     <div class = "tours-card__details">
                         <ul>
@@ -135,10 +138,10 @@
                     <div class = "tours-card__cta u-flex-cont">
                         <div class = "tours-card__price-box">
                             <p class = "tours-card__price-only">Only</p>
-                            <p class="tours-card__price-value">$299</p>
+                            <p class = "tours-card__price-value">$299</p>
                         </div>
-                        <a href = "#" class = "btn btn--white">Book now!</a>
-                        <a href = "#" class = "btn btn--grad-1 btn--grad">Learn more &darr;</a>
+                        <a class = "btn btn--white" href = "#popup">Book now!</a>
+                        <a class = "btn btn--grad-1 btn--grad" href = "#">Learn more &darr;</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +152,7 @@
                         &nbsp;
                     </div>
                     <h4 class = "tours-card__heading">
-                        <span class="tours-card__heading-span tours-card__heading-span--2">The forest hiker</span>
+                        <span class = "tours-card__heading-span tours-card__heading-span--2">The forest hiker</span>
                     </h4>
                     <div class = "tours-card__details">
                         <ul>
@@ -165,10 +168,10 @@
                     <div class = "tours-card__cta u-flex-cont">
                         <div class = "tours-card__price-box">
                             <p class = "tours-card__price-only">Only</p>
-                            <p class="tours-card__price-value">$949</p>
+                            <p class = "tours-card__price-value">$949</p>
                         </div>
-                        <a href = "#" class = "btn btn--white">Book now!</a>
-                        <a href = "#" class = "btn btn--grad-2 btn--grad ">Learn more &darr;</a>
+                        <a class = "btn btn--white" href = "#popup">Book now!</a>
+                        <a class = "btn btn--grad-2 btn--grad " href = "#">Learn more &darr;</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +182,7 @@
                         &nbsp;
                     </div>
                     <h4 class = "tours-card__heading">
-                        <span class="tours-card__heading-span tours-card__heading-span--3">The mountain
+                        <span class = "tours-card__heading-span tours-card__heading-span--3">The mountain
                                                                                            adventurer</span>
                     </h4>
                     <div class = "tours-card__details">
@@ -196,99 +199,101 @@
                     <div class = "tours-card__cta u-flex-cont">
                         <div class = "tours-card__price-box">
                             <p class = "tours-card__price-only">Only</p>
-                            <p class="tours-card__price-value">$499</p>
+                            <p class = "tours-card__price-value">$499</p>
                         </div>
-                        <a href = "#" class = "btn btn--white">Book now!</a>
-                        <a href = "#" class = "btn btn--grad-3 btn--grad">Learn more &darr;</a>
+                        <a class = "btn btn--white" href = "#popup">Book now!</a>
+                        <a class = "btn btn--grad-3 btn--grad" href = "#">Learn more &darr;</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class = "u-center-text u-margin-top-big">
-            <a href="#" class = "btn btn--green">Discover all tours</a>
+            <a class = "btn btn--green" href = "#">Discover all tours</a>
         </div>
     </section>
 
-    <section class="section-story">
+    <section class = "section-story">
 
-        <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4">
-                    <source src="img/video.webm" type="video/webm">
-                    Your browser is not supported!
-                </video>
+        <div class = "bg-video">
+            <video autoplay class = "bg-video__content" loop muted>
+                <source src = "img/video.mp4" type = "video/mp4">
+                <source src = "img/video.webm" type = "video/webm">
+                Your browser is not supported!
+            </video>
         </div>
         <div class = "u-center-text u-margin-bottom-big u-margin-top-big">
             <h2 class = "heading-secondary">We simply make people happy</h2>
         </div>
-        <div class="flex-col">
-            <div class="story">
+        <div class = "flex-col">
+            <div class = "story">
                 <figure class = "story__shape">
-                    <img src = "img/nat-8.jpg" alt = "Person on a tour" class="story__img">
-                    <figcaption class="story__caption">Mary Smith</figcaption>
+                    <img alt = "Person on a tour" class = "story__img" src = "img/nat-8.jpg">
+                    <figcaption class = "story__caption">Mary Smith</figcaption>
                 </figure>
                 <div class = "story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">
+                    <h3 class = "heading-tertiary u-margin-bottom-small">
                         I had the best week ever with my family
                     </h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis enim esse, nostrum
                         quasi quibusdam repell. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-                        debitis enim esse, nostrum quasi quibusdam repellendus veritatis! Cum in iure iusto modi nulla perferendis porro possimus quae, quod saepe sequi soluta suscipit! Non, tempora, voluptatem.
+                        debitis enim esse, nostrum quasi quibusdam repellendus veritatis! Cum in iure iusto modi nulla
+                        perferendis porro possimus quae, quod saepe sequi soluta suscipit! Non, tempora, voluptatem.
                     </p>
                 </div>
             </div>
-            <div class="story">
+            <div class = "story">
                 <figure class = "story__shape">
-                    <img src = "img/nat-9.jpg" alt = "Person on a tour" class="story__img">
-                    <figcaption class="story__caption">Mark Wilson</figcaption>
+                    <img alt = "Person on a tour" class = "story__img" src = "img/nat-9.jpg">
+                    <figcaption class = "story__caption">Mark Wilson</figcaption>
                 </figure>
                 <div class = "story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">
+                    <h3 class = "heading-tertiary u-margin-bottom-small">
                         That what will change your imagination forever
                     </h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis enim esse, nostrum
                         quasi quibusdam repell. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-                        debitis enim esse, nostrum quasi quibusdam repellendus veritatis! Cum in iure iusto modi nulla perferendis porro possimus quae, quod saepe sequi soluta suscipit! Non, tempora, voluptatem.
+                        debitis enim esse, nostrum quasi quibusdam repellendus veritatis! Cum in iure iusto modi nulla
+                        perferendis porro possimus quae, quod saepe sequi soluta suscipit! Non, tempora, voluptatem.
                     </p>
                 </div>
             </div>
         </div>
         <div class = "u-center-text u-margin-top-big">
-            <a href="#" class = "btn-text">Discover all tours &darr;</a>
+            <a class = "btn-text" href = "#">Discover all tours &darr;</a>
         </div>
     </section>
 
-    <section class="section-book">
-        <div class="container">
-            <div class="book">
-                <div class="book__form">
+    <section class = "section-book">
+        <div class = "container">
+            <div class = "book">
+                <div class = "book__form">
                     <div class = "u-margin-bottom-medium">
                         <h2 class = "heading-secondary">Start booking now!</h2>
                     </div>
                     <form action = "#" class = "form">
-                        <div class="form__group">
-                            <input type = "text" id="name" class = "form__input" placeholder="Full Name" required>
-                            <label class="form__label" for = "name">Full Name</label>
+                        <div class = "form__group">
+                            <input class = "form__input" id = "name" placeholder = "Full Name" required type = "text">
+                            <label class = "form__label" for = "name">Full Name</label>
                         </div>
-                        <div class="form__group">
-                        <input type = "email" id="email" class = "form__input" placeholder="Email" required>
-                            <label class="form__label" for = "email">Email</label>
+                        <div class = "form__group">
+                            <input class = "form__input" id = "email" placeholder = "Email" required type = "email">
+                            <label class = "form__label" for = "email">Email</label>
                         </div>
-                        <div class="form--group u-margin-bottom-small">
-                          <div class="form__radio-group">
-                              <input type = "radio" class = "form__radio-input" id="small" name="size">
-                              <label for = "small" class="form__radio-label">Small tours</label>
-                              <span class="form__radio-button"></span>
-                          </div>
-                            <div class="form__radio-group">
-                                <input type = "radio" class = "form__radio-input" id="big" name="size">
-                                <label for = "big" class="form__radio-label">Big tours</label>
-                                <span class="form__radio-button"></span>
+                        <div class = "form--group u-margin-bottom-small">
+                            <div class = "form__radio-group">
+                                <input class = "form__radio-input" id = "small" name = "size" type = "radio">
+                                <label class = "form__radio-label" for = "small">Small tours</label>
+                                <span class = "form__radio-button"></span>
+                            </div>
+                            <div class = "form__radio-group">
+                                <input class = "form__radio-input" id = "big" name = "size" type = "radio">
+                                <label class = "form__radio-label" for = "big">Big tours</label>
+                                <span class = "form__radio-button"></span>
                             </div>
                         </div>
-                        <div class="form__group">
+                        <div class = "form__group">
                             <button class = "btn btn--green">Next step &darr;</button>
                         </div>
                     </form>
@@ -299,24 +304,48 @@
 </main>
 <footer class = "footer">
     <div class = "footer__logo-box">
-        <img src = "img/logo-green-2x.png" alt = "Full logo" class = "footer__logo">
+        <img alt = "Full logo" class = "footer__logo" src = "img/logo-green-2x.png">
     </div>
-    <div class="grid--2-cols gap-8">
-        <div class="footer__navigation">
-            <ul class="footer__list">
-                <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Cooperation</a></li>
+    <div class = "grid--2-cols gap-8">
+        <div class = "footer__navigation">
+            <ul class = "footer__list">
+                <li class = "footer__item"><a class = "footer__link" href = "#">About us</a></li>
+                <li class = "footer__item"><a class = "footer__link" href = "#">Contact</a></li>
+                <li class = "footer__item"><a class = "footer__link" href = "#">Privacy</a></li>
+                <li class = "footer__item"><a class = "footer__link" href = "#">Terms</a></li>
+                <li class = "footer__item"><a class = "footer__link" href = "#">FAQ</a></li>
+                <li class = "footer__item"><a class = "footer__link" href = "#">Cooperation</a></li>
             </ul>
-            </div>
-        <p class="footer-copyright">
-            &copy; 2022 by <a href="#" class="footer__link">ex3-cut3</a>. All rights reserved. It's build for
-            educational purposes and shouldn't be used without a written permission of the author. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, at corporis earum fugit illum, molestiae nesciunt nostrum placeat soluta suscipit voluptas voluptatem!
+        </div>
+        <p class = "footer-copyright">
+            &copy; 2022 by <a class = "footer__link" href = "#">ex3-cut3</a>. All rights reserved. It's build for
+            educational purposes and shouldn't be used without a written permission of the author. Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Aliquid, at corporis earum fugit illum, molestiae nesciunt nostrum
+            placeat soluta suscipit voluptas voluptatem!
         </p>
     </div>
 </footer>
+
+<div class="popup" id="popup">
+    <div class="popup__content">
+         <div class="popup__left">
+             <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+             <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+         </div>
+        <div class="popup__right">
+            <a href = "##" class = "popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Start Booking now</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                                                            booking</h3>
+            <p class="popup__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta fugit ipsam mollitia,
+                obcaecati odit repudiandae? Eos harum labore voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolore earum error exercitationem molestias non provident, quidem sequi similique tempore! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Dolor, magni!
+            </p>
+            <a href = "#" class = "btn--green btn">Book now</a>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

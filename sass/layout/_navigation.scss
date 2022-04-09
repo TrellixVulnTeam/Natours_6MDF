@@ -56,7 +56,8 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: start;
-
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
   }
 
   &__item {
@@ -107,6 +108,9 @@
   }
   &__checkbox:checked ~ &__nav {
 visibility: visible;
+    opacity: 1;
+  }
+  &__checkbox:checked ~ &__nav &__list {
     opacity: 1;
   }
 
