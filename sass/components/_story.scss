@@ -10,14 +10,14 @@
   padding: 6rem 6rem 6rem 7rem;
   position: relative;
   transform: skewX(-13deg);
-  @include respond("phone") {
-    width: 75%;
-    padding: 4rem 4rem 4rem 5rem;
-  }
+
   @include respond("phone") {
     width: 75%;
     padding: 3rem 3rem 3rem 4rem;
     margin: 0 2rem;
+  }
+  @include respond("very-small-phone") {
+    transform: skewX(-9deg);
   }
 
   &__shape {
@@ -48,7 +48,10 @@
   }
 
   & > * {
-    transform: skewX(12deg);
+    transform: skewX(13deg);
+    @include respond("very-small-phone") {
+     transform: skewX(9deg);
+    }
   }
 
   &__caption {

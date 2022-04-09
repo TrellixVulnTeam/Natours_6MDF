@@ -35,10 +35,47 @@
     font-size: 1.6rem;
   }
 }
-.about-imgs {
-  @include respond("tab-port"){
-  display: none;
+.composition{
+  @include respond("tab-port") {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    & img{
+      width: 100%;
+    }
+    & img:last-child{
+      grid-column: 1/-1;
+      justify-self: center;
+      width: 65%;
+    }
+  }
+  @include respond("phone"){
+    grid-template-columns:repeat(1, 90%);
+    & img:last-child{
+      width: 100%;
+    }
+  }
 }
+ .to-align{
+   display: inline-block;
+   @include respond("tab-port") {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }
+ .to-decrease-padd{
+   @include respond("small-phone") {
+     padding: 0 3rem !important;
+   }
+ }
+.composition__photo--p1, .composition__photo--p3, .composition__photo--p2 {
+  @include respond("tab-port") {
+      position: static !important;
+  }
 }
 .grid--3-cols{
   display: grid;

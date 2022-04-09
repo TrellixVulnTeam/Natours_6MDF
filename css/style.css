@@ -6,32 +6,32 @@ Dark green: #28b485
 */
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 *, *::after, *::before {
   box-sizing: inherit;
   margin: 0;
@@ -91,18 +91,18 @@ body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 body {
   color: #777;
   font-family: 'Lato', sans-serif;
@@ -133,7 +133,7 @@ body {
     letter-spacing: 1.74rem; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .7rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -167,18 +167,18 @@ body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .u-center-text {
   text-align: center; }
 
@@ -215,8 +215,41 @@ body {
     font-size: 1.6rem; } }
 
 @media (max-width: 56.25em) {
-  .about-imgs {
-    display: none; } }
+  .composition {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem; }
+    .composition img {
+      width: 100%; }
+    .composition img:last-child {
+      grid-column: 1/-1;
+      justify-self: center;
+      width: 65%; } }
+
+@media (max-width: 37.5em) {
+  .composition {
+    grid-template-columns: repeat(1, 90%); }
+    .composition img:last-child {
+      width: 100%; } }
+
+.to-align {
+  display: inline-block; }
+  @media (max-width: 56.25em) {
+    .to-align {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+@media (max-width: 28.125em) {
+  .to-decrease-padd {
+    padding: 0 3rem !important; } }
+
+@media (max-width: 56.25em) {
+  .composition__photo--p1, .composition__photo--p3, .composition__photo--p2 {
+    position: static !important; } }
 
 .grid--3-cols {
   display: grid;
@@ -302,6 +335,20 @@ body {
   .grid--2-cols.gap-8 {
     gap: 4.1rem; } }
 
+/*
+
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
+
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .btn, .btn:link, .btn:visited {
   border-radius: 100px;
   display: inline-block;
@@ -376,6 +423,15 @@ body {
 .btn--white::after {
   background-color: #fff; }
 
+@media (max-width: 56.25em) {
+  .btn-text {
+    font-size: 1.8rem; } }
+
+@media (max-width: 37.5em) {
+  .btn-text {
+    font-size: 1.2rem;
+    font-weight: 700; } }
+
 .btn-text:link, .btn-text:visited {
   color: #55c57a;
   display: inline-block;
@@ -397,18 +453,18 @@ body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .header {
   background-image: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: top;
@@ -434,18 +490,18 @@ body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 html, body {
   height: 100%; }
 
@@ -458,7 +514,7 @@ html, body {
       padding: 22rem 0 15rem; } }
   @media (max-width: 37.5em) {
     .section-about {
-      padding: 22rem 0 12rem; } }
+      padding: 21rem 0 12rem; } }
 
 .section-features {
   padding: 17.5rem 10rem;
@@ -514,7 +570,7 @@ html, body {
         padding: 3rem 4rem; } }
     @media (max-width: 56.25em) {
       .book__form {
-        width: 80%; } }
+        width: 75%; } }
 
 @media (max-width: 37.5em) {
   .form {
@@ -522,18 +578,18 @@ html, body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .story {
   width: 67.5%;
   margin: 0 auto;
@@ -546,12 +602,11 @@ html, body {
   @media (max-width: 37.5em) {
     .story {
       width: 75%;
-      padding: 4rem 4rem 4rem 5rem; } }
-  @media (max-width: 37.5em) {
-    .story {
-      width: 75%;
       padding: 3rem 3rem 3rem 4rem;
       margin: 0 2rem; } }
+  @media (max-width: 23.75em) {
+    .story {
+      transform: skewX(-9deg); } }
   .story__shape {
     height: 15rem;
     width: 15rem;
@@ -572,7 +627,10 @@ html, body {
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.35s ease-in-out; }
   .story > * {
-    transform: skewX(12deg); }
+    transform: skewX(13deg); }
+    @media (max-width: 23.75em) {
+      .story > * {
+        transform: skewX(9deg); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -593,18 +651,18 @@ html, body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 body {
   color: #777;
   font-family: 'Lato', sans-serif;
@@ -635,7 +693,7 @@ body {
     letter-spacing: 1.74rem; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .7rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -669,18 +727,18 @@ body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .composition {
   position: relative; }
   .composition__photo {
@@ -710,18 +768,18 @@ body {
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -752,18 +810,18 @@ padding: 10rem 4rem;
 }*/
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .tours-card {
   perspective: 200rem;
   display: block;
@@ -818,6 +876,9 @@ padding: 10rem 4rem;
     text-align: right;
     right: 1rem;
     width: 75%; }
+    @media (max-width: 28.125em) {
+      .tours-card__heading {
+        width: 52%; } }
   .tours-card__heading-span {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -826,10 +887,6 @@ padding: 10rem 4rem;
       .tours-card__heading-span {
         font-size: 2.1rem;
         font-weight: 700; } }
-    @media (max-width: 75em) {
-      .tours-card__heading-span {
-        font-size: 1.7rem;
-        font-weight: 900; } }
     .tours-card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .tours-card__heading-span--2 {
@@ -947,18 +1004,18 @@ padding: 10rem 4rem;
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .footer {
   background-color: #333;
   padding: 5rem 10rem;
@@ -1004,18 +1061,18 @@ padding: 10rem 4rem;
 
 /*
 
- 0-600 phones
- 600-900 portrait tablets
- 900-1200 landscape tablets
- [1200-1800] normal design
- 1800+ desktops
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
 
- $breakpoints choices:
-  - phone
-  - tab-port
-  - tab-land
-  - big-desktop
- */
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .navigation {
   /*NOT THAT
   &:nth-child(even):hover, &:nth-child(even):active {
@@ -1112,11 +1169,11 @@ padding: 10rem 4rem;
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
-      background-size: 225%;
+      background-size: 235%;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
       border-bottom: transparent solid 2px; }
     .navigation__link:hover, .navigation__link:active {
-      background-position: 100%;
+      background-position: 100.6%;
       color: #55c57a;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
       transform: translateX(1rem); }
