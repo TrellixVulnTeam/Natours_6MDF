@@ -1,4 +1,5 @@
 @import "../abstracts/_variables.scss";
+@import "../abstracts/mixins";
 .footer{
   background-color: $color-gray-dark-3;
   padding: 5rem 10rem;
@@ -28,6 +29,12 @@
   }
   &__navigation{
     justify-self: end;
+    @include respond("tab-port"){
+      justify-self: center;
+    }
+  }
+  &__item{
+    text-align: center;
   }
   &__link{
     transition: all 0.4s ease-in-out;

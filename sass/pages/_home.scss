@@ -1,9 +1,19 @@
 @import "../abstracts/_variables";
-
+@import "../abstracts/_mixins";
+html, body
+{
+  height: 100%;
+}
 .section-about {
   padding: 25rem 0 27.5rem;
   background-color: $color-gray-light-1;
   margin-top: -20rem;
+  @include respond("tab-port") {
+    padding: 22rem 0 15rem;
+  }
+  @include respond("phone") {
+    padding: 22rem 0 12rem;
+  }
 }
 
 .section-features {
@@ -15,7 +25,15 @@
   & > * { // SELECT only direct children of .section-features
     transform: skewY(7deg);
   }
-
+   @include respond("tab-port") {
+    padding: 10rem 0;
+   }
+  @include respond("small-phone") {
+    transform: skewY(-10deg);
+    & > * { // SELECT only direct children of .section-features
+      transform: skewY(10deg);
+    }
+  }
   margin-top: -8.5rem;
 }
 
@@ -23,10 +41,13 @@
   padding: 24.5rem 0 15rem;
   margin-top: -8.5rem;
   background-color: $color-gray-light-1;
+  @include respond("phone") {
+    padding: 18rem 0 8rem;
+  }
 }
 
 .section-story {
-  padding: 3rem 0;
+  padding: 0.5rem 0 3rem;
   position: relative;
 }
 
@@ -36,13 +57,31 @@
 }
 
 .book {
-  background-image: linear-gradient(110deg,rgba($color-white, 0.8) 0, rgba($color-white, 0.7) 50%, transparent 50%), url("../img/nat-10.jpg");
+  background-image: linear-gradient(110deg,rgba($color-white, 0.8) 0, rgba($color-white, 0.7) 75%, transparent 75%), url("../img/nat-10.jpg");
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.17);
 height: 50rem;
+  @include respond("tab-port") {
+    background-image: linear-gradient(110deg,rgba($color-white, 0.8) 0, rgba($color-white, 0.7) 65%, transparent 65%), url("../img/nat-10.jpg");
+  }
+  @include respond("tab-port") {
+  background-image:linear-gradient(123deg, rgba(255, 255, 255, 0.8) 0, rgba(255, 255, 255, 0.7) 70%, transparent 70%), url(../img/nat-10.jpg);
+  }
   &__form{
     width: 50%;
     padding: 6rem;
+    @include respond("tab-port") {
+      width: 65%;
+      padding: 3rem 4rem;
+    }
+    @include respond("tab-port") {
+      width: 80%;
+    }
+  }
+}
+.form{
+  @include respond("phone") {
+    gap: 1.5rem !important;
   }
 }

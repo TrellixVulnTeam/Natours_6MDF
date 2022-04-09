@@ -1,0 +1,41 @@
+ /*
+
+ 0-600 phones
+ 600-900 portrait tablets
+ 900-1200 landscape tablets
+ [1200-1800] normal design
+ 1800+ desktops
+
+ $breakpoints choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+ */
+ @mixin respond($breakpoint) {
+   @if ($breakpoint == 'phone') {
+     @media (max-width: 37.5em) {   // 1EM=16PX
+       @content
+     }
+   } @else if ($breakpoint == 'tab-port') {
+     @media (max-width: 56.25em) {   // 1EM=16PX
+       @content
+     }
+   }
+   @else if ($breakpoint == 'tab-land') {
+     @media (max-width: 75em) {   // 1EM=16PX
+       @content
+     }
+   }
+   @else if ($breakpoint == 'big-desktop') {
+     @media (min-width: 112.5em) {   // 1EM=16PX
+       @content
+     }
+   }
+   @else if ($breakpoint == 'small-phone') {       // 450px
+     @media (max-width: 28.125em) {   // 1EM=16PX
+       @content
+     }
+   }
+ }
+

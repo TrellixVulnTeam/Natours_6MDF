@@ -1,3 +1,4 @@
+@import "../abstracts/mixins";
 .u-center-text {
   text-align: center;
 }
@@ -5,23 +6,76 @@
 .grid--2-cols {
   display: grid;
   grid-template-columns:repeat(2, 1fr);
+  @include respond("tab-port") {
+    grid-template-columns:repeat(1, 1fr);
+    justify-content: center;
+  }
 }
 .grid--4-cols{
   display: grid;
   grid-template-columns:repeat(4, 20%);
+  @include respond("tab-port") {
+    grid-template-columns:repeat(2, 40%);
+    row-gap:4rem;
+  }
+}
+.gap-4{
+  gap:4rem;
+}
+.form--group.u-margin-bottom-small{
+  @include respond("tab-port") {
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    gap:2rem;
+  }
+  @include respond("phone") {
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    gap:1rem;
+    font-size: 1.6rem;
+  }
+}
+.about-imgs {
+  @include respond("tab-port"){
+  display: none;
+}
 }
 .grid--3-cols{
   display: grid;
   grid-template-columns:repeat(3, 25%);
+  @include respond("tab-port") {
+    grid-template-columns:repeat(2, 35%);
+    gap: 3rem;
+  }
+  @include respond("small-phone") {
+    grid-template-columns:repeat(1, 75%);
+    gap: 3rem;
+  }
+}
+.last-card{
+  @include respond("tab-port") {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+  }
+  @include respond("small-phone") {
+    width: 100%;
+  }
 }
 .grid-justify-space{
   justify-content: space-evenly;
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+  @include respond("phone") {
+    margin-bottom: 6rem;
+  }
 }
 .u-margin-top-big {
   margin-top: 8rem;
+  @include respond("phone") {
+    margin-top: 6rem;
+  }
 }
 .u-margin-top-small{
   margin-top: 3rem;
@@ -70,4 +124,9 @@
 
 .u-padding-horizontal-medium {
   padding: 0 7rem;
+}
+.grid--2-cols.gap-8{
+  @include respond("phone") {
+    gap: 4.1rem;
+  }
 }
