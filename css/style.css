@@ -932,6 +932,20 @@ $breakpoints choices:
     height: 100%;
     width: 100%; }
 
+/*
+
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
+
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .form {
   display: flex;
   flex-direction: column;
@@ -974,6 +988,9 @@ $breakpoints choices:
   .form__radio-label {
     cursor: pointer;
     padding-left: 5rem; }
+    @media (max-width: 23.75em) {
+      .form__radio-label {
+        padding-left: 3rem; } }
   .form__radio-group {
     width: 49%;
     position: relative;

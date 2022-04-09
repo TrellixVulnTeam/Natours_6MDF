@@ -1,4 +1,6 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
+
 
 .form {
   &__input {
@@ -61,6 +63,9 @@
   &__radio-label {
     cursor: pointer;
     padding-left: 5rem;
+    @include respond("very-small-phone"){
+     padding-left: 3rem;
+    }
   }
 
   &__radio-group {
