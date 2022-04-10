@@ -1,4 +1,6 @@
 @import "../abstracts/_variables.scss";
+@import "../abstracts/mixins.scss";
+
 
 .popup {
   position: fixed;
@@ -36,29 +38,43 @@
     transform: scale(.25);
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-
+    @include respond("tab-land"){
+      width: 90%;
+    }
   }
 
   &__left {
     display: table-cell;
     width: 33.33%;
+    @include respond("tab-port"){
+      width: 45%;
+      vertical-align: middle;
+    }
+    @include respond("phone"){
+      display: none;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
-  }
-
-  &__img {
 
   }
 
   &__right {
     display: table-cell;
     width: 66.66%;
+    @include respond("tab-port"){
+      width: 55%;
+    }
     vertical-align: middle;
     padding: 3rem 5rem;
     position: relative;
+    & .heading-secondary{
+      @include respond("tab-port"){
+        font-size: 2.7rem;
+      }
+    }
   }
 
   &__close {
@@ -92,4 +108,11 @@
     hyphens: auto;
     text-align: justify;
   }
+}
+
+.to-center{
+  @include respond("tab-port"){
+    text-align: center;
+  }
+  
 }

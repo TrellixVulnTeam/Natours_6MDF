@@ -1232,6 +1232,20 @@ $breakpoints choices:
     top: 0;
     transform: rotate(-135deg); }
 
+/*
+
+0-600 phones
+600-900 portrait tablets
+900-1200 landscape tablets
+[1200-1800] normal design
+1800+ desktops
+
+$breakpoints choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+*/
 .popup {
   position: fixed;
   top: 0;
@@ -1262,9 +1276,19 @@ $breakpoints choices:
     transform: scale(0.25);
     overflow: hidden;
     transition: all 0.5s ease-in-out; }
+    @media (max-width: 75em) {
+      .popup__content {
+        width: 90%; } }
   .popup__left {
     display: table-cell;
     width: 33.33%; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        width: 45%;
+        vertical-align: middle; } }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: none; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -1274,6 +1298,12 @@ $breakpoints choices:
     vertical-align: middle;
     padding: 3rem 5rem;
     position: relative; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 55%; } }
+    @media (max-width: 56.25em) {
+      .popup__right .heading-secondary {
+        font-size: 2.7rem; } }
   .popup__close {
     transition: all 0.4s ease-in-out; }
     .popup__close:link, .popup__close:visited {
@@ -1298,6 +1328,10 @@ $breakpoints choices:
     column-rule: 1px solid #999;
     hyphens: auto;
     text-align: justify; }
+
+@media (max-width: 56.25em) {
+  .to-center {
+    text-align: center; } }
 
 /* *::selection {
   color: red;
