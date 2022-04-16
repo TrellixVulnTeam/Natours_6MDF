@@ -3,116 +3,120 @@
 
 
 .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  // background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba($color-black, 0.7);
-  z-index: 1005;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s 0.2s ease-in-out;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100vh;
+	 // background: rgba(0, 0, 0, 0.4);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background-color: rgba($color-black, 0.7);
+	 z-index: 1005;
+	 opacity: 0;
+	 visibility: hidden;
+	 transition: all 0.5s 0.2s ease-in-out;
+	 @supports (-webkit-backdrop-filter: blur(9px)) or (backdrop-filter: blur(9px)) {
+			backdrop-filter: blur(9px)
+	 }
 
-  &:target {
-    opacity: 1;
-    visibility: visible;
+	 &:target {
+			opacity: 1;
+			visibility: visible;
 
-    & .popup__content {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+			& .popup__content {
+				 opacity: 1;
+				 transform: scale(1);
+			}
+	 }
 
-  &__content {
-    width: 75%;
-    background: $color-white;
-    border-radius: 3px;
-    display: table;
-    box-shadow: 0 2rem 4rem rgba($color-gray-dark-2, 0.2);
-    opacity: 0;
-    transform: scale(.25);
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-    @include respond("tab-land"){
-      width: 90%;
-    }
-  }
+	 &__content {
+			width: 75%;
+			background: $color-white;
+			border-radius: 3px;
+			display: table;
+			box-shadow: 0 2rem 4rem rgba($color-gray-dark-2, 0.2);
+			opacity: 0;
+			transform: scale(.25);
+			overflow: hidden;
+			transition: all 0.5s ease-in-out;
+			@include respond("tab-land") {
+				 width: 90%;
+			}
+	 }
 
-  &__left {
-    display: table-cell;
-    width: 33.33%;
-    @include respond("tab-port"){
-      width: 45%;
-      vertical-align: middle;
-    }
-    @include respond("phone"){
-      display: none;
-    }
-  }
+	 &__left {
+			display: table-cell;
+			width: 33.33%;
+			@include respond("tab-port") {
+				 width: 45%;
+				 vertical-align: middle;
+			}
+			@include respond("phone") {
+				 display: none;
+			}
+	 }
 
-  &__img {
-    display: block;
-    width: 100%;
+	 &__img {
+			display: block;
+			width: 100%;
 
-  }
+	 }
 
-  &__right {
-    display: table-cell;
-    width: 66.66%;
-    @include respond("tab-port"){
-      width: 55%;
-    }
-    vertical-align: middle;
-    padding: 3rem 5rem;
-    position: relative;
-    & .heading-secondary{
-      @include respond("tab-port"){
-        font-size: 2.7rem;
-      }
-    }
-  }
+	 &__right {
+			display: table-cell;
+			width: 66.66%;
+			@include respond("tab-port") {
+				 width: 55%;
+			}
+			vertical-align: middle;
+			padding: 3rem 5rem;
+			position: relative;
 
-  &__close {
-    transition: all 0.4s ease-in-out;
+			& .heading-secondary {
+				 @include respond("tab-port") {
+						font-size: 2.7rem;
+				 }
+			}
+	 }
 
-    &:link, &:visited {
-      display: inline-block;
-      position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      font-size: 3rem;
-      text-decoration: none;
-      color: $color-gray-dark;
-      cursor: pointer;
-      line-height: 1;
-    }
+	 &__close {
+			transition: all 0.4s ease-in-out;
 
-    &:hover {
-      color: $primary-color;
-      transform-origin: center;
-      transform: rotate(-90deg) translateY(-0.5rem);
-    }
-  }
+			&:link, &:visited {
+				 display: inline-block;
+				 position: absolute;
+				 top: 2.5rem;
+				 right: 2.5rem;
+				 font-size: 3rem;
+				 text-decoration: none;
+				 color: $color-gray-dark;
+				 cursor: pointer;
+				 line-height: 1;
+			}
 
-  &__text {
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
-    column-count: 2;
-    column-gap: 5rem;
-    column-rule: 1px solid $color-gray-dark-2;
-    hyphens: auto;
-    text-align: justify;
-  }
+			&:hover {
+				 color: $primary-color;
+				 transform-origin: center;
+				 transform: rotate(-90deg) translateY(-0.5rem);
+			}
+	 }
+
+	 &__text {
+			font-size: 1.5rem;
+			margin-bottom: 4rem;
+			column-count: 2;
+			column-gap: 5rem;
+			column-rule: 1px solid $color-gray-dark-2;
+			hyphens: auto;
+			text-align: justify;
+	 }
 }
 
-.to-center{
-  @include respond("tab-port"){
-    text-align: center;
-  }
-  
+.to-center {
+	 @include respond("tab-port") {
+			text-align: center;
+	 }
+
 }

@@ -1,4 +1,5 @@
 @import "../abstracts/mixins";
+@import "../abstracts/variables";
 .u-center-text {
   text-align: center;
 }
@@ -117,6 +118,9 @@
 .u-margin-top-small{
   margin-top: 3rem;
 }
+.u-margin-top-very-small{
+  margin-top: 1.5rem;
+}
 .u-margin-bottom-small{
   margin-bottom: 5rem;
 }
@@ -165,5 +169,14 @@
 .grid--2-cols.gap-8{
   @include respond("phone") {
     gap: 4.1rem;
+  }
+}
+.u-border-bottom{
+  border-bottom: 2px $primary-color solid;
+}
+.none{
+  display: none;
+  @media only screen and (max-width:75em) {
+  display: inline-block;
   }
 }
